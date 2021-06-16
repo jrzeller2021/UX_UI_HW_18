@@ -9,11 +9,13 @@
 }
 nav {
   width: 76%;
+  height: auto;
   padding: 0%;
 }
 body {
     margin: 0;
-  }
+}
+
   header {
     background-color: #2D1634;
     padding: 20px;
@@ -22,6 +24,7 @@ body {
     float: right;
     color: white;
     font: roboto condensed;
+    font-size: 1vw;
   }
   header li {
     display: inline-block;
@@ -47,7 +50,6 @@ body {
     background-size: cover;
     position: relative;
   }
-
   .hero-background {
     width: 100%; 
     height: 100%; 
@@ -73,13 +75,66 @@ body {
     background-color: #FFFFFF;
     text-align: center;
   }
-  button {
+  /*button {
     padding: 15px;
     background-color: #259D8C;
     color: white;
     font-size: 20px;
     border-radius: #259D8C 4px;
-  }
+  }*/
+
+.button-container {
+  width: 15vw;
+  height: 4vw;
+  position: relative;
+  left: 60%
+}
+
+.button {
+  background: #2B2D2F;
+  width: 90%;
+  height: 90%;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.button-text {
+  font: bold 1.25rem/1 'Poppins';
+  color: #71DFBE;
+  position: relative;
+  top: 35%;
+}
+
+.progress-bar {
+  position: absolute;
+  height: 10px;
+  width: 0;
+  right: 0;
+  top: 50%;
+  left: 50%;
+  border-radius: 200px;
+  transform: translateY(-50%) translateX(-50%);
+  background: lighten(#2B2D2F, 15%);
+}
+
+svg {
+  width: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  left: 45%;
+  right: 0;
+}
+
+.check {
+  fill: none;
+  stroke: #FFFFFF;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
   footer {
     background-color: #2D1634;
     padding: 5px;

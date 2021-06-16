@@ -2,9 +2,14 @@
 <html>
   <head>
     <title>Jacquelyn Portfolio</title>
-    <link href="css/index.css" type="text/css" rel="stylesheet">
+    <link href="css/index.css" type="text/css" rel="stylesheet">  
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap" rel="stylesheet">
   </head>
   <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/anime.js"></script>
+    <script src="js/index.js"></script>
     <header>
       <div class="inline-block logo">
         <img src="images/JZ Logo.png" alt="logo-light">
@@ -20,7 +25,16 @@
       <img src="images/heroImg.jpg" class="hero-background">
       <div class="hero-text">
         <h1>About Jacquelyn Zeller</h1>
-        <button>Download Resume</button>
+        <!--<button>Download Resume</button>-->
+        <div class="button-container">
+          <div class="button">
+            <div class="button-text">Download Resume</div>
+          </div>
+          <div class="progress-bar"></div>
+          <svg x="0px" y="0px" viewBox="0 0 25 30" style="enable-background:new 0 0 25 30;">
+            <path class="check" class="st0" d="M2,19.2C5.9,23.6,9.4,28,9.4,28L23,2"/>
+          </svg>
+        </div>
       </div>
     </section>
     <section>
